@@ -1,0 +1,102 @@
+.avatar {
+  height: 280px;
+  width: 280px;
+  border-radius: 140px;
+}
+
+.name {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 130%;
+  color: #000000;
+}
+
+.login {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #0064eb;
+}
+
+.container {
+  display: flex;
+  white-space: nowrap;
+}
+
+.icon_followers {
+  width: 25px;
+  height: 16px;
+}
+
+.icon_following {
+  width: 16px;
+  height: 16px;
+}
+
+.followers {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 100%;
+}
+
+.following {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 100%;
+}
+
+.noUser {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 140%;
+  color: #808080;
+  margin-top: 30px;
+  margin-left: 810px;
+  white-space: nowrap;
+}
+
+.iconUserNotFound {
+  width: 65px;
+  height: 75px;
+  margin-top: 250px;
+  margin-left: 850px;
+}
+
+.loading {
+  margin-top: 70px;
+  margin-left: 530px;
+}
+
+.iconSearch {
+  width: 80px;
+  height: 80px;
+  margin-top: 250px;
+  margin-left: 850px;
+}
+
+.startSearch1 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 140%;
+  color: #808080;
+  margin-top: 40px;
+  margin-left: 800px;
+  white-space: nowrap;
+}
+
+.startSearch2 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 140%;
+  color: #808080;
+  margin-top: 10px;
+  margin-left: 830px;
+  white-space: nowrap;
+}
