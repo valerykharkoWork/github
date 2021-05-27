@@ -24,44 +24,44 @@ const Pages = observer(() => {
 
   return (
     <>
-      <div></div>
-      <div className={styles.pagination}>
-        <Pagination className="mt-5">
-          {portionNumber > 1 && (
-            <Image
-              className={styles.arrow}
-              src={arrowL}
+      {user.isFound === true && (
+        <div className={styles.pagination}>
+      <Pagination className="mt-5">
+        {portionNumber > 1 && (
+          <Image
+            className={styles.arrow}
+            src={arrowL}
+            onClick={() => {
+              setPortionNumber(portionNumber - 1);
+            }}
+          />
+        )}
+        {pages
+          .filter(
+            (p) => p >= leftPortionPageNumber && p <= rightPortionPageNumber
+          )
+          .map((page) => (
+            <Pagination.Item
+              key={page}
+              active={user.pageR === page}
               onClick={() => {
-                setPortionNumber(portionNumber - 1);
+                user.setPage(page);
               }}
-            />
-          )}
-          {pages
-            .filter(
-              (p) => p >= leftPortionPageNumber && p <= rightPortionPageNumber
-            )
-            .map((page) => (
-              <Pagination.Item
-                key={page}
-                active={user.pageR === page}
-                onClick={() => {
-                  user.setPage(page);
-                }}
-              >
-                {page}
-              </Pagination.Item>
-            ))}
-          {portionCount > portionNumber && (
-            <Image
-              className={styles.arrow}
-              src={arrowR}
-              onClick={() => {
-                setPortionNumber(portionNumber + 1);
-              }}
-            />
-          )}
-        </Pagination>
-      </div>
+            >
+              {page}
+            </Pagination.Item>
+          ))}
+        {portionCount > portionNumber && (
+          <Image
+            className={styles.arrow}
+            src={arrowR}
+            onClick={() => {
+              setPortionNumber(portionNumber + 1);
+            }}
+          />
+        )}
+      </Pagination>
+    </div>)}
     </>
   );
 });
